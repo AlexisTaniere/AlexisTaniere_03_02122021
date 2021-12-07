@@ -1,0 +1,19 @@
+{
+  "name": "projet03",
+  "version": "1.0.0",
+  "description": "Projet oh my food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./Sass/main.scss ./public/css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/AlexisTaniere/AlexisTaniere_03_02122021.git"
+  },
+  "author": "AlexisTaniere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexisTaniere/AlexisTaniere_03_02122021/issues"
+  },
+  "homepage": "https://github.com/AlexisTaniere/AlexisTaniere_03_02122021#readme"
+}

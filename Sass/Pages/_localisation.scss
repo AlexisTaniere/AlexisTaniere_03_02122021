@@ -1,0 +1,20 @@
+.localisation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    height: 50px;
+    input{
+        width:150px;
+        text-align: center;
+        background-color: #EAEAEA;
+        font-family: 'Roboto';
+        font-weight: bold;
+        border: 0px solid;
+        &:focus{
+            outline:  none;
+        }
+
+    }
+
+}

@@ -1,13 +1,6 @@
 @import "./Utils/variables";
-@import "./Base/base.scss";
+@import "./Base/base";
+@import "./Layout/header";
 
-.header{
-    display: flex;
-}
 
-.footer{
-    display: flex;
-    background-color: blue;
-    justify-content: center;
-}
 

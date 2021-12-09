@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Déclaration des couleurs primaire, secondaire et tertiaire */
+/* Déclaration des polices de caractère */
 /* Importation des polices Shrikhand et Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
@@ -37,6 +38,7 @@
   font-family: "Roboto";
   background-color: #f6f6f6;
   text-align: center;
+  padding-bottom: 40px;
 }
 .reservation__title {
   font-size: 1.3em;
@@ -50,6 +52,21 @@
   display: flex;
   justify-content: center;
   margin: 15px;
+  margin-bottom: 20px;
+}
+
+.explorer {
+  display: flex;
+  justify-content: center;
+}
+.explorer__button {
+  color: white;
+  font-family: "Roboto";
+  border-radius: 20px;
+  padding: 12px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 4px 4px 6px #aaa;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

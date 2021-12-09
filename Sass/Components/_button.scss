@@ -1,0 +1,14 @@
+.explorer{
+    display: flex;
+    justify-content: center;
+
+    &__button{
+    color:white;
+    font-family: $font_text;
+    border-radius: 20px;
+    padding:12px;
+    background: linear-gradient(to bottom right,$color_secondary, $color_primary);
+    box-shadow: 4px 4px 6px #aaa;
+    border:none;
+    }
+}

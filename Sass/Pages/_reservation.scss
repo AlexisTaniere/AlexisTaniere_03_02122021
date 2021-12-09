@@ -2,6 +2,7 @@
     font-family: $font_text;
     background-color: #f6f6f6;
     text-align: center;
+    padding-bottom: 40px;
 
     &__title{
         font-size: 1.3em;
@@ -14,5 +15,6 @@
         display: flex;
         justify-content: center;
         margin:15px;
+        margin-bottom:20px;
     }
 }

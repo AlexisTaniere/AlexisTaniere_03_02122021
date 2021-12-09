@@ -1,0 +1,13 @@
+.reservation{
+    font-family: $font_text;
+    text-align: center;
+
+    &__title{
+        font-size: 1.3em;
+    }
+    &__text{
+        display: flex;
+        justify-content: center;
+        margin:15px;
+    }
+}

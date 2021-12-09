@@ -4,13 +4,15 @@
     align-items: center;
     background-color: #EAEAEA;
     height: 50px;
-    input{
+    border-top: 3px solid #dbdbdb;
+    &__input{
         width:150px;
         text-align: center;
         background-color: #EAEAEA;
-        font-family: 'Roboto';
+        font-family: $font_text, serif;
         font-weight: bold;
         border: 0px solid;
+        color:#565656;
         &:focus{
             outline:  none;
         }

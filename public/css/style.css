@@ -14,6 +14,9 @@
   justify-content: center;
   padding: 25px;
 }
+.header__logo img {
+  width: 50%;
+}
 
 .localisation {
   display: flex;
@@ -21,17 +24,32 @@
   align-items: center;
   background-color: #EAEAEA;
   height: 50px;
+  border-top: 3px solid #dbdbdb;
 }
-.localisation input {
+.localisation__input {
   width: 150px;
   text-align: center;
   background-color: #EAEAEA;
-  font-family: "Roboto";
+  font-family: "Roboto", serif;
   font-weight: bold;
   border: 0px solid;
+  color: #565656;
 }
-.localisation input:focus {
+.localisation__input:focus {
   outline: none;
+}
+
+.reservation {
+  font-family: "Roboto";
+  text-align: center;
+}
+.reservation__title {
+  font-size: 1.3em;
+}
+.reservation__text {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

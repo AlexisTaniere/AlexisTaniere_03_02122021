@@ -1,0 +1,49 @@
+.fonctionnement{
+    font-family: $font_text;
+
+    &__title{
+        margin-left: $margin-left_h2;
+        margin-top: $margin-top_h2;       
+    }
+
+    &__button{
+        display :flex;
+        // justify-content: center;
+        // gap:2em;
+        font-weight: bold;
+        background-color: #f6f6f6;
+        padding : 20px;
+        margin: 15px;
+        border-radius: 20px;
+
+        &:hover{
+            background-color: #f5edff;
+        }
+
+        &:hover .fonctionnement__icone{
+            color:$color_primary;
+        }
+    }
+
+
+    &__circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -26px;
+        background-color: $color_primary;
+        color: white;
+        font-weight: normal;
+        height:17px;
+        width:17px;
+        border-radius: 8.5px;
+        font-size: 11px;
+    }
+
+    &__icone{
+        width:30px;
+        color:grey;
+    }
+
+}

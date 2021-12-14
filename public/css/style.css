@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Déclaration des couleurs primaire, secondaire et tertiaire */
+/* Déclaration de la couleur de fond gris clair */
 /* Déclaration des polices de caractère */
 /* Déclaration des margin pour les h2*/
 /* Importation des polices Shrikhand et Roboto */
@@ -58,6 +59,7 @@
 
 .fonctionnement {
   font-family: "Roboto";
+  margin-bottom: 40px;
 }
 .fonctionnement__title {
   margin-left: 20px;
@@ -98,6 +100,59 @@
 .fonctionnement__icone {
   width: 30px;
   color: grey;
+}
+
+.restaurant {
+  font-family: "Roboto";
+  background-color: #f6f6f6;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.restaurant__card-title {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant__image {
+  overflow: hidden;
+}
+.restaurant__image img {
+  width: 100%;
+  height: 10em;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant__name {
+  font-weight: bold;
+}
+.restaurant__info {
+  margin: 10px;
+}
+.restaurant__heart {
+  padding: 12px;
+}
+.restaurant__new {
+  background-color: #99E2D0;
+  color: #179476;
+  width: 22%;
+  padding: 1%;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  right: 30px;
+  margin-top: 15px;
 }
 
 .explorer {

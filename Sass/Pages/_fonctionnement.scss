@@ -1,5 +1,6 @@
 .fonctionnement{
     font-family: $font_text;
+    margin-bottom: 40px;
 
     &__title{
         margin-left: $margin-left_h2;
@@ -11,7 +12,7 @@
         // justify-content: center;
         // gap:2em;
         font-weight: bold;
-        background-color: #f6f6f6;
+        background-color: $font_grey;
         padding : 20px;
         margin: 15px;
         border-radius: 20px;

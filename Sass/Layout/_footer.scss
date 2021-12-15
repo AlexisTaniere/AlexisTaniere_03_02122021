@@ -1,0 +1,30 @@
+.footer{
+    color : $color_footer;
+    background-color: $background_color_footer;
+    font-family: $font_text;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 7%;
+
+   &__name{
+       font-family: $font_title;
+       color:white;
+   }
+
+   &__icone{
+       width:27px;
+   }
+
+   &__info{
+    line-height: 25px;
+
+    a{
+        text-decoration: none;
+        color: $color_footer;
+        &:visited{
+            color : $color_footer;
+        }
+    }
+   }
+}

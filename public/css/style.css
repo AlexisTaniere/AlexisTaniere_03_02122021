@@ -156,10 +156,14 @@
 .restaurant__image {
   overflow: hidden;
 }
+.restaurant__image--note_enchantee {
+  object-position: 0px -160px !important;
+}
 .restaurant__image img {
   width: 100%;
   height: 10em;
   object-fit: cover;
+  object-position: bottom;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }

@@ -149,6 +149,9 @@
   border-radius: 15px;
   margin-bottom: 15px;
 }
+.restaurant__card:hover {
+  transform: scale(1.05);
+}
 .restaurant__card-title {
   display: flex;
   justify-content: space-between;
@@ -157,11 +160,11 @@
   overflow: hidden;
 }
 .restaurant__image--note_enchantee {
-  object-position: 0px -160px !important;
+  object-position: 0px -150px !important;
 }
 .restaurant__image img {
   width: 100%;
-  height: 10em;
+  height: 11em;
   object-fit: cover;
   object-position: bottom;
   border-top-left-radius: 15px;
@@ -200,6 +203,10 @@
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 4px 4px 6px #aaa;
   border: none;
+}
+.explorer__button:hover {
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+  box-shadow: 4px 4px 6px #404040;
 }
 
 /*# sourceMappingURL=style.css.map */

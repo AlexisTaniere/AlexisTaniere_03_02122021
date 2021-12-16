@@ -10,5 +10,10 @@
     background: linear-gradient(to bottom right,$color_secondary, $color_primary);
     box-shadow: 4px 4px 6px #aaa;
     border:none;
+
+        &:hover{
+            background: linear-gradient(to bottom right,lighten($color_secondary, 5%),lighten($color_primary, 5%));
+            box-shadow: 4px 4px 6px #404040;
+        }
     }
 }

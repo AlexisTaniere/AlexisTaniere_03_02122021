@@ -1,8 +1,8 @@
-.explorer{
+.button{
     display: flex;
     justify-content: center;
 
-    &__button{
+    &__size{
     color:white;
     font-family: $font_text;
     border-radius: 20px;
@@ -10,6 +10,7 @@
     background: linear-gradient(to bottom right,$color_secondary, $color_primary);
     box-shadow: 4px 4px 6px #aaa;
     border:none;
+    width: 55%;
 
         &:hover{
             background: linear-gradient(to bottom right,lighten($color_secondary, 5%),lighten($color_primary, 5%));

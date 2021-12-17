@@ -1,0 +1,55 @@
+.menu{
+
+    background-color: $font_grey;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    top: -50px;
+    font-family: $font_text;
+    padding-bottom: 40px;
+
+    &__image{
+         img{
+          width:100%;
+         }
+    }
+    &__title{
+        font-family: $font_title;
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__underline{
+        border-bottom: solid $color_tertiary;
+    }
+
+    &__choice{
+        margin-bottom:40px;
+    }
+
+    &__card{
+        background-color: white;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        border-radius: 15px;
+        padding: 10px;      
+
+        &--title, &--price{
+            font-weight: bold;
+        }
+
+        &--info{
+            line-height: 22px;
+        }
+        
+    }
+}

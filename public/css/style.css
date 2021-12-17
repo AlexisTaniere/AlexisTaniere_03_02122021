@@ -10,10 +10,23 @@
 .header__logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 15px;
 }
 .header__logo img {
   width: 50%;
+}
+.header__logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.header__logo a:visited {
+  color: black;
+}
+.header__arrow {
+  position: absolute;
+  left: 20px;
 }
 
 .footer {
@@ -191,11 +204,56 @@
   margin-top: 15px;
 }
 
-.explorer {
+.menu {
+  background-color: #f6f6f6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+  top: -50px;
+  font-family: "Roboto";
+  padding-bottom: 40px;
+}
+.menu__image img {
+  width: 100%;
+}
+.menu__title {
+  font-family: "Shrikhand";
+}
+.menu__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__underline {
+  border-bottom: solid #99E2D0;
+}
+.menu__choice {
+  margin-bottom: 40px;
+}
+.menu__card {
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-radius: 15px;
+  padding: 10px;
+}
+.menu__card--title, .menu__card--price {
+  font-weight: bold;
+}
+.menu__card--info {
+  line-height: 22px;
+}
+
+.button {
   display: flex;
   justify-content: center;
 }
-.explorer__button {
+.button__size {
   color: white;
   font-family: "Roboto";
   border-radius: 20px;
@@ -203,8 +261,9 @@
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 4px 4px 6px #aaa;
   border: none;
+  width: 55%;
 }
-.explorer__button:hover {
+.button__size:hover {
   background: linear-gradient(to bottom right, #ff93e1, #a16be0);
   box-shadow: 4px 4px 6px #404040;
 }

@@ -2,10 +2,25 @@
     &__logo{
         display:flex;
         justify-content: center;
+        align-items: center;
         padding: 15px;
         img{
             width:50%;
         }
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            
+            &:visited{
+                color:black;
+            }
+        }
+    }
+
+    &__arrow{
+        position: absolute;
+        left: 20px;
     }
     
        

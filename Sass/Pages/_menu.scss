@@ -19,6 +19,11 @@
         font-family: $font_title;
     }
 
+    &__heart{
+        position: relative;
+        right: 15px;
+    }
+
     &__info{
         display: flex;
         justify-content: space-between;
@@ -50,6 +55,10 @@
         &--info{
             line-height: 22px;
         }
-        
+    }
+    &__box{
+        height:100%;
+        width:30px;
+        background-color: $color_tertiary;
     }
 }

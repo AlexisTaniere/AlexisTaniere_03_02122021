@@ -16,6 +16,8 @@
         color:black;
         border-radius: 15px;
         margin-bottom: 15px;
+        transform: scale(1);
+        transition: transform 500ms;
 
         &:hover{
             transform:scale(1.05);
@@ -53,7 +55,15 @@
     }
 
     &__heart{
-        padding:12px;
+        height: 15px;
+        position: relative; 
+        top: 12px;
+        right: 12px;
+        &:hover{
+            color: $color_primary;
+            background-color: $color_primary;
+        }
+
     }
 
     &__new{

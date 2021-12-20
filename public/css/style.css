@@ -161,6 +161,8 @@
   color: black;
   border-radius: 15px;
   margin-bottom: 15px;
+  transform: scale(1);
+  transition: transform 500ms;
 }
 .restaurant__card:hover {
   transform: scale(1.05);
@@ -190,7 +192,14 @@
   margin: 10px;
 }
 .restaurant__heart {
-  padding: 12px;
+  height: 15px;
+  position: relative;
+  top: 12px;
+  right: 12px;
+}
+.restaurant__heart:hover {
+  color: #9356DC;
+  background-color: #9356DC;
 }
 .restaurant__new {
   background-color: #99E2D0;
@@ -221,6 +230,10 @@
 .menu__title {
   font-family: "Shrikhand";
 }
+.menu__heart {
+  position: relative;
+  right: 15px;
+}
 .menu__info {
   display: flex;
   justify-content: space-between;
@@ -248,6 +261,11 @@
 .menu__card--info {
   line-height: 22px;
 }
+.menu__box {
+  height: 100%;
+  width: 30px;
+  background-color: #99E2D0;
+}
 
 .button {
   display: flex;
@@ -262,10 +280,14 @@
   box-shadow: 4px 4px 6px #aaa;
   border: none;
   width: 55%;
+  transform: scale(1);
+  transition: transform 500ms;
 }
 .button__size:hover {
   background: linear-gradient(to bottom right, #ff93e1, #a16be0);
   box-shadow: 4px 4px 6px #404040;
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */

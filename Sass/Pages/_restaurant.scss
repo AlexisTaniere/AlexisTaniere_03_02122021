@@ -54,16 +54,34 @@
         margin:10px;
     }
 
+    &__hearts{
+        position:relative;
+        z-index: 1;
+    }
+
     &__heart{
         height: 15px;
-        position: relative; 
+        position: absolute; 
         top: 12px;
         right: 12px;
+        color:black;
         &:hover{
-            color: $color_primary;
-            background-color: $color_primary;
+            color:transparent;
+            & + .restaurant__heart--full{
+            opacity: 1;
+            }
         }
 
+        &--full{
+        height: 15px;
+        position: absolute; 
+        top: 12px;
+        right: 12px;
+        color:$color_primary;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 1000ms ease-in-out;
+        }
     }
 
     &__new{

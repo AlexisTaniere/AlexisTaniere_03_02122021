@@ -46,7 +46,8 @@
         justify-content: space-between;
         align-items: end;
         border-radius: 15px;
-        padding: 10px;      
+        // padding: 10px;
+        height:50px;      
 
         &--title, &--price{
             font-weight: bold;
@@ -54,11 +55,22 @@
 
         &--info{
             line-height: 22px;
+            padding: 8px;
         }
     }
     &__box{
         height:100%;
-        width:30px;
+        width:50px;
         background-color: $color_tertiary;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        &--check{
+            color:white;
+        }
+
     }
 }

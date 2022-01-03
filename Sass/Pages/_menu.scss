@@ -47,14 +47,33 @@
         align-items: end;
         border-radius: 15px;
         // padding: 10px;
-        height:50px;      
+        height:60px; 
+        
+        &:hover{
+            & > .menu__box {
+                transform: scaleX(1);
+                transform-origin: right;
+                animation-name: checkbox;
+                animation-duration: 1000ms;
+                visibility: visible;
+            }
+
+                .fa-check-circle{
+                    transform: rotate(360deg);
+                }
+            }
 
         &--title, &--price{
             font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        &--price{
+            margin-right: 10px;
         }
 
         &--info{
-            line-height: 22px;
+            // line-height: 22px;
             padding: 8px;
         }
     }
@@ -67,10 +86,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        display: none;
+        visibility: hidden;
         &--check{
             color:white;
+            transition: transform 1000ms; 
         }
 
+    }
+    @keyframes checkbox{
+        0% {
+            transform: scaleX(0);
+        }
+        100% {
+            transform: scaleX(1);
+        }
     }
 }

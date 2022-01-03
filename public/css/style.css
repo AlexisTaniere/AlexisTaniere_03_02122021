@@ -271,13 +271,26 @@
   justify-content: space-between;
   align-items: end;
   border-radius: 15px;
-  height: 50px;
+  height: 60px;
+}
+.menu__card:hover > .menu__box {
+  transform: scaleX(1);
+  transform-origin: right;
+  animation-name: checkbox;
+  animation-duration: 1000ms;
+  visibility: visible;
+}
+.menu__card:hover .fa-check-circle {
+  transform: rotate(360deg);
 }
 .menu__card--title, .menu__card--price {
   font-weight: bold;
+  margin-bottom: 8px;
+}
+.menu__card--price {
+  margin-right: 10px;
 }
 .menu__card--info {
-  line-height: 22px;
   padding: 8px;
 }
 .menu__box {
@@ -289,10 +302,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  visibility: hidden;
 }
 .menu__box--check {
   color: white;
+  transition: transform 1000ms;
+}
+@keyframes checkbox {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 .button {

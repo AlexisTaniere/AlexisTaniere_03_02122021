@@ -264,6 +264,7 @@
   margin-bottom: 40px;
 }
 .menu__card {
+  position: relative;
   background-color: white;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -274,14 +275,13 @@
   height: 60px;
 }
 .menu__card:hover > .menu__box {
-  transform: scaleX(1);
-  transform-origin: right;
-  animation-name: checkbox;
-  animation-duration: 1000ms;
-  visibility: visible;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  width: 25%;
 }
 .menu__card:hover .fa-check-circle {
   transform: rotate(360deg);
+  color: white;
 }
 .menu__card--title, .menu__card--price {
   font-weight: bold;
@@ -292,29 +292,21 @@
 }
 .menu__card--info {
   padding: 8px;
+  width: 90%;
 }
 .menu__box {
   height: 100%;
-  width: 50px;
+  width: 0px;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
 }
 .menu__box--check {
-  color: white;
   transition: transform 1000ms;
-}
-@keyframes checkbox {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
+  color: transparent;
 }
 
 .button {

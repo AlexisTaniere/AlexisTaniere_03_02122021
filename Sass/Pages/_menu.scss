@@ -13,6 +13,8 @@
     &__image{
          img{
           width:100%;
+          height: 300px;
+          object-fit: cover;
          }
     }
     &__title{
@@ -101,4 +103,26 @@
         }
 
     }
+    &__entree{
+        opacity:0;
+        animation: fadein 2s both;
+    }
+
+    &__plat{
+        opacity:0;
+        animation: fadein 2s both;
+        animation-delay: 1s;
+    }
+
+    &__dessert{
+        opacity:0;
+        animation: fadein 2s both;
+        animation-delay: 2s;
+    }
+    
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
 }

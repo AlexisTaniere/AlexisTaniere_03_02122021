@@ -244,6 +244,8 @@
 }
 .menu__image img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 .menu__title {
   font-family: "Shrikhand";
@@ -314,6 +316,28 @@
 .menu__box--check {
   transition: transform 1000ms;
   color: transparent;
+}
+.menu__entree {
+  opacity: 0;
+  animation: fadein 2s both;
+}
+.menu__plat {
+  opacity: 0;
+  animation: fadein 2s both;
+  animation-delay: 1s;
+}
+.menu__dessert {
+  opacity: 0;
+  animation: fadein 2s both;
+  animation-delay: 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .button {

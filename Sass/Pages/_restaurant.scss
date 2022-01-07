@@ -58,13 +58,15 @@
     &__hearts{
         position:relative;
         z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__heart{
         height: 15px;
         position: absolute; 
-        top: 12px;
-        right: 12px;
+        right: 15px;
         color:black;
         &:hover{
             color:transparent;
@@ -76,8 +78,7 @@
         &--full{
         height: 15px;
         position: absolute; 
-        top: 12px;
-        right: 12px;
+        right: 15px;
         color:$color_primary;
         z-index: -1;
         opacity: 0;

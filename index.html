@@ -11,13 +11,23 @@
    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
 
    <script src="https://kit.fontawesome.com/8c41f107c5.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
+   <div class="spinner__container">
+      <div class="spinner"></div>
+   </div>
+
+
+   <!-- div englobant l'intégralité de la page pour pouvoir 
+   la masquer lorsque le loading spinner est actif -->
+   <div class="hide_page">
    <header>
       <div class="header__logo">
          <img src="images/logo/ohmyfood.png" alt="Logo" />
       </div>
    </header>
+
 
    <form class="localisation">
       <i class="fas fa-map-marker-alt"></i>
@@ -137,6 +147,6 @@
           <a href="mailto:contact@ohmyfood.fr">Contact</a>
       </div>
    </footer>
-
+</div>
 </body>
 </html>

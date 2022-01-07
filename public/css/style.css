@@ -114,9 +114,11 @@
   margin: 15px;
   border-radius: 20px;
   text-decoration: none;
+  box-shadow: 4px 4px 6px #aaa;
 }
 .fonctionnement__button:hover {
   background-color: #f5edff;
+  box-shadow: 4px 4px 6px #404040;
 }
 .fonctionnement__button:hover .fonctionnement__icone {
   color: #9356DC;

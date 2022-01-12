@@ -1,9 +1,11 @@
+// Définition des propriétés des boutons de la page principale 
 .fonctionnement{
     font-family: $font_text;
     margin-bottom: 40px;
     margin-left: 5%;
     margin-right: 5%;
 
+    // Agencement des éléments en version desktop
     &__elements{
         @media screen and (min-width: 1024px) {
         display:flex;
@@ -44,7 +46,7 @@
         }
     }
 
-
+    // Numéro des boutons (1,2 et 3) dans un cercle violet
     &__circle{
         display: flex;
         justify-content: center;

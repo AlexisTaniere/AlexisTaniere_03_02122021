@@ -1,3 +1,4 @@
+// Définition des propriétés des éléments des pages menu
 .menu{
 
     background-color: $font_grey;
@@ -30,6 +31,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (min-width:1024px){
+        margin-right: 2%;}
     }
 
     &__underline{
@@ -49,9 +53,9 @@
         justify-content: space-between;
         align-items: end;
         border-radius: 15px;
-        // padding: 10px;
         height:60px; 
         
+        // Animation de la checkbox au survol d'une card
         &:hover{
             & > .menu__box {
                 overflow: hidden;
@@ -80,7 +84,6 @@
         }
 
         &--info{
-            // line-height: 22px;
             padding: 8px;
             width:90%;
             white-space: nowrap;
@@ -88,6 +91,8 @@
             overflow: hidden;
         }
     }
+
+    // Définition des propriétés de la checkbox
     &__box{
         height:100%;
         width:0px;
@@ -103,6 +108,8 @@
         }
 
     }
+
+    // Affichage progressif des plats
     &__entree{
         opacity:0;
         animation: fadein 2s both;

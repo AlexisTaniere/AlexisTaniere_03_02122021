@@ -1,3 +1,4 @@
+// Définition des éléments de la page index
 .restaurant{
     font-family: $font_text;
     background-color: $font_grey;
@@ -71,12 +72,14 @@
         margin:10px;
     }
 
+    // Définition et animation du coeur 
     &__hearts{
         position:relative;
         z-index: 1;
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
 
     &__heart{

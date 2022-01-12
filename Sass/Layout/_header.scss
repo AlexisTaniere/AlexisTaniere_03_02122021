@@ -1,3 +1,4 @@
+// Définition des propriétés du header avec son logo et la flèche sur les pages des menus
 .header{
     &__logo{
         display:flex;
@@ -6,6 +7,9 @@
         padding: 15px;
         img{
             width:50%;
+            @media screen and (min-width:768px){
+                width:33%;
+            }
         }
         a{
             display: flex;
@@ -21,6 +25,17 @@
     &__arrow{
         position: absolute;
         left: 20px;
+        font-size: x-large;
+       
+        @media screen and (max-width:400px){
+        font-size: larger;
+        }
+
+        @media screen and (min-width:1024px){
+            font-size: xx-large;
+        }
+
+
     }
     
        

@@ -1,3 +1,4 @@
+// Mise en page de la section de réservation
 .reservation{
     font-family: $font_text;
     background-color: $font_grey;
@@ -9,7 +10,7 @@
         margin-top : 0px;
         padding-top : 30px;
         width: 66%;
-        margin: 0 auto; /* Centre l'élément */
+        margin: 0 auto;
     }
     &__text{
         display: flex;

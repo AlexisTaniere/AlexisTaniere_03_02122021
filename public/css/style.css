@@ -338,6 +338,7 @@
   align-items: end;
   border-radius: 15px;
   height: 60px;
+  cursor: pointer;
 }
 .menu__card:hover > .menu__box {
   overflow: hidden;

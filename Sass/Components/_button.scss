@@ -15,6 +15,10 @@
     transform: scale(1);
     transition: transform 500ms;
 
+    @media screen and (min-width:1024px){
+        width:25%;
+    }
+
         &:hover{
             background: linear-gradient(to bottom right,lighten($color_secondary, 5%),lighten($color_primary, 5%));
             box-shadow: 4px 4px 6px #404040;

@@ -125,6 +125,9 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+.fonctionnement__elements a {
+  color: black;
+}
 @media screen and (min-width: 1024px) {
   .fonctionnement__elements {
     display: flex;
@@ -271,6 +274,7 @@
   position: absolute;
   right: 15px;
   background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: -1;
@@ -296,7 +300,7 @@
   padding-left: 5%;
   padding-right: 5%;
   position: relative;
-  top: -50px;
+  margin-top: -50px;
   font-family: "Roboto";
   padding-bottom: 40px;
 }
@@ -403,6 +407,15 @@
     opacity: 1;
   }
 }
+@media screen and (min-width: 1024px) {
+  .menu__desktop {
+    display: flex;
+    gap: 2em;
+  }
+  .menu__desktop article {
+    width: 30%;
+  }
+}
 
 .button {
   display: flex;
@@ -419,6 +432,11 @@
   width: 55%;
   transform: scale(1);
   transition: transform 500ms;
+}
+@media screen and (min-width: 1024px) {
+  .button__size {
+    width: 25%;
+  }
 }
 .button__size:hover {
   background: linear-gradient(to bottom right, #ff93e1, #a16be0);
@@ -442,7 +460,7 @@
   border-top-color: #9356DC;
   animation-name: rotate;
   animation-duration: 600ms;
-  animation-timing-function: linear, ease;
+  animation-timing-function: linear;
   animation-iteration-count: 4;
   animation-fill-mode: forwards;
 }

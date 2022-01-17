@@ -99,6 +99,7 @@
         position: absolute; 
         right: 15px;
         background: linear-gradient(to bottom right, $color_primary, $color_secondary);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         z-index: -1;
@@ -118,4 +119,5 @@
         right: 30px;
         margin-top: 15px;
     }
+
 }
